@@ -1,16 +1,50 @@
+import { useEffect, useState } from 'react';
 import './App.css';
-import IndividualMovies from './movies/IndividualMovies';
-import { movieDTO } from './movies/movies.model';
+import { landingPageDTO } from './movies/movies.model';
+import MoviesList from './movies/MoviesList';
 function App() {
-  const testMovie: movieDTO = {
-    id: 1,
-    title: 'test',
-    poster: 'https://unsplash.com/photos/QHsUQ-_q-_Q',
-  }
+
+  const [movies, setMovies] = useState<landingPageDTO>({});
+
+
+
+  useEffect(() => {
+    const timerId = setTimeout(() => {
+      setMovies({
+        inTheaters: [{
+          id: 1,
+          title: 'In Theaters',
+          poster: 'https://source.unsplash.com/random',
+        },
+        {
+          id: 2,
+          title: 'In Theaters',
+          poster: 'https://source.unsplash.com/random',
+        }
+        ],
+        upcommingRelease: [{
+          id: 1,
+          title: 'Upcomming Release',
+          poster: 'https://source.unsplash.com/random',
+        },
+        {
+          id: 2,
+          title: 'Upcomming Release',
+          poster: 'https://source.unsplash.com/random',
+        }]
+      });
+
+    }, 1000)
+    return () => clearTimeout(timerId);
+  });
 
   return (
     <div>
-      <IndividualMovies {...testMovie} />
+      <h3>In Theaters</h3>
+      <MoviesList movies={movies.inTheaters} />
+
+      <h3>Upcomming Releases</h3>
+      <MoviesList movies={movies.upcommingRelease} />
     </div>
   );
 }
