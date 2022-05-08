@@ -5,9 +5,9 @@ import GenericList from '../utils/GenericList';
 export default function MoviesList(props: moviesListProps) {
     return (
     <GenericList list={props.movies}> 
-        <div className="movieList">
+        <div className="row">
             {props && props.movies?.map((movie) => {
-                return <IndividualMovies key={movie.id} {...movie} />
+                return <div className='col-md-3'  key={movie.id}> <IndividualMovies {...movie} /> </div>
             })}
         </div>
     </GenericList>

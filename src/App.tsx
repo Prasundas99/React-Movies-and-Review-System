@@ -39,7 +39,7 @@ function App() {
   });
 
   return (
-    <div>
+    <div className='container'>
       <h3>In Theaters</h3>
       <MoviesList movies={movies.inTheaters} />
 
