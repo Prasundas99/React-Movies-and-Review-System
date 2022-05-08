@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import Menu from './Menu';
 import { landingPageDTO } from './movies/movies.model';
 import MoviesList from './movies/MoviesList';
 function App() {
@@ -39,6 +40,8 @@ function App() {
   });
 
   return (
+    <>
+    <Menu/>
     <div className='container'>
       <h3>In Theaters</h3>
       <MoviesList movies={movies.inTheaters} />
@@ -46,6 +49,7 @@ function App() {
       <h3>Upcomming Releases</h3>
       <MoviesList movies={movies.upcommingRelease} />
     </div>
+    </>
   );
 }
 
