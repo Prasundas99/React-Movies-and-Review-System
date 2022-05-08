@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import IndexGenres from './Generes/IndexGenres';
 import Menu from './Menu';
 import { landingPageDTO } from './movies/movies.model';
 import MoviesList from './movies/MoviesList';
@@ -40,16 +42,26 @@ function App() {
   });
 
   return (
-    <>
-    <Menu/>
-    <div className='container'>
-      <h3>In Theaters</h3>
-      <MoviesList movies={movies.inTheaters} />
+    <BrowserRouter>
+      <Menu />
+      <div className='container'>
+        <Routes>
+          <Route path="/genres" element={<IndexGenres />} />
 
-      <h3>Upcomming Releases</h3>
-      <MoviesList movies={movies.upcommingRelease} />
-    </div>
-    </>
+
+          <Route path="/" element={
+            <>
+              <h3>In Theaters</h3>
+              <MoviesList movies={movies.inTheaters} />
+              <h3>Upcomming Releases</h3>
+              <MoviesList movies={movies.upcommingRelease} />
+            </>
+          } />
+
+
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 
