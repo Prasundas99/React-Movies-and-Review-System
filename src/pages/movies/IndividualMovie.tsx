@@ -1,13 +1,13 @@
 import { movieDTO } from "./movies.model";
 import css from './IndividualMovie.module.css';
 import { Link } from "react-router-dom";
-import Button from "../utils/Button";
-import customConfirm from "../utils/customConfirm";
+import Button from "../../components/utils/Button";
+import customConfirm from "../../components/utils/customConfirm";
 import axios from "axios";
-import { urlMovies } from "../endpoints";
+import { urlMovies } from "../../endpoints";
 import { useContext } from "react";
-import AlertContext from '../utils/AlertContext';
-import Authorized from "../auth/Authorized";
+import AlertContext from '../../components/utils/AlertContext';
+import Authorized from "../../components/auth/Authorized";
 
 export default function IndividualMovie(props: movieDTO) {
 

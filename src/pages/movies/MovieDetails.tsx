@@ -2,12 +2,12 @@ import axios, { AxiosResponse } from "axios"
 import { useEffect, useState } from "react"
 import ReactMarkdown from "react-markdown";
 import { Link, useParams } from "react-router-dom"
-import { urlMovies, urlRatings } from "../endpoints"
-import coordinateDTO from "../utils/coordinates.model";
-import Loading from "../utils/Loading";
-import Map from "../utils/Map";
+import { urlMovies, urlRatings } from "../../endpoints"
+import coordinateDTO from "../../components/utils/coordinates.model";
+import Loading from "../../components/utils/Loading";
+import Map from "../../components/utils/Map";
 import { movieDTO } from "./movies.model";
-import Ratings from '../utils/Ratings';
+import Ratings from '../../components/utils/Ratings';
 import Swal from "sweetalert2";
 
 export default function MovieDetails() {

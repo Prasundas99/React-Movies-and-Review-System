@@ -1,8 +1,8 @@
 import axios from 'axios'
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import { urlMovieTheaters } from '../endpoints'
-import DisplayErrors from '../utils/DisplayErrors';
+import { urlMovieTheaters } from '../../endpoints'
+import DisplayErrors from '../../components/utils/DisplayErrors';
 import { movieTheaterCreationDTO } from './movieTheater.model'
 import MovieTheaterForm from './MovieTheaterForm'
 

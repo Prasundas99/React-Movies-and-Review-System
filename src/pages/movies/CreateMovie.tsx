@@ -1,12 +1,12 @@
 import axios, { AxiosResponse } from 'axios';
 import { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
-import { urlMovies } from '../endpoints';
+import { urlMovies } from '../../endpoints';
 import { genreDTO } from '../genres/genres.model';
 import { movieTheaterDTO } from '../movietheaters/movieTheater.model';
-import DisplayErrors from '../utils/DisplayErrors';
-import { convertMovieToFormData } from '../utils/formDataUtils';
-import Loading from '../utils/Loading';
+import DisplayErrors from '../../components/utils/DisplayErrors';
+import { convertMovieToFormData } from '../../components/utils/formDataUtils';
+import Loading from '../../components/utils/Loading';
 import MovieForm from './MovieForm';
 import { movieCreationDTO, moviesPostGetDTO } from './movies.model';
 

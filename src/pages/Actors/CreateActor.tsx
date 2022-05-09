@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import DisplayErrors from '../utils/DisplayErrors';
+import DisplayErrors from '../../components/utils/DisplayErrors';
 import ActorForm from './ActorForm'
 import { actorCreationDTO } from './actors.model'
-import {convertActorToFormData} from '../utils/formDataUtils';
+import {convertActorToFormData} from '../../components/utils/formDataUtils';
 import axios from 'axios';
-import { urlActors } from '../endpoints';
+import { urlActors } from '../../endpoints';
 import { useHistory } from 'react-router-dom';
 
 export default function CreateActor(){

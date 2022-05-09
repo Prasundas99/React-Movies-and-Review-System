@@ -1,19 +1,19 @@
 import { Form, Formik, FormikHelpers } from "formik";
 import { movieCreationDTO } from './movies.model';
 import * as Yup from 'yup'
-import Button from '../utils/Button';
+import Button from '../../components/utils/Button';
 import { Link } from 'react-router-dom';
-import TextField from '../forms/TextField';
-import ImageField from '../forms/ImageField';
-import DateField from '../forms/DateField';
-import CheckboxField from '../forms/CheckboxField';
-import MultipleSelector, { multipleSelectorModel } from '../forms/MultipleSelector';
+import TextField from '../../components/forms/TextField';
+import ImageField from '../../components/forms/ImageField';
+import DateField from '../../components/forms/DateField';
+import CheckboxField from '../../components/forms/CheckboxField';
+import MultipleSelector, { multipleSelectorModel } from '../../components/forms/MultipleSelector';
 import { useState } from "react";
 import { genreDTO } from "../genres/genres.model";
 import { movieTheaterDTO } from "../movietheaters/movieTheater.model";
-import TypeAheadActor from '../forms/TypeAheadActors';
+import TypeAheadActor from '../../components/forms/TypeAheadActors';
 import { actorMovieDTO } from "../actors/actors.model";
-import MarkdownField from "../forms/MarkdownField";
+import MarkdownField from "../../components/forms/MarkdownField";
 
 export default function MovieForm(props: movieFormProps) {
 

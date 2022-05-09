@@ -1,6 +1,6 @@
 import IndexEntity from '../utils/IndexEntity';
 import { userDTO } from './auth.models';
-import { urlAccounts } from '../endpoints';
+import { urlAccounts } from '../../endpoints';
 import customConfirm from '../utils/customConfirm';
 import Button from '../utils/Button';
 import axios from 'axios';

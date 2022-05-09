@@ -1,7 +1,7 @@
 import axios, { AxiosResponse } from 'axios';
 import { useEffect, useState } from 'react';
-import { urlMovies } from '../endpoints';
-import AlertContext from '../utils/AlertContext';
+import { urlMovies } from '../../endpoints';
+import AlertContext from '../../components/utils/AlertContext';
 import { landingPageDTO } from './movies.model';
 import MoviesList from './MoviesList';
 

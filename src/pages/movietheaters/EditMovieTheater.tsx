@@ -1,5 +1,5 @@
-import { urlMovieTheaters } from '../endpoints';
-import EditEntity from '../utils/EditEntity';
+import { urlMovieTheaters } from '../../endpoints';
+import EditEntity from '../../components/utils/EditEntity';
 import { movieTheaterCreationDTO, movieTheaterDTO } from './movieTheater.model';
 import MovieTheaterForm from './MovieTheaterForm';
 

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { authenticationResponse, userCredentials } from "./auth.models";
-import {urlAccounts} from '../endpoints';
+import {urlAccounts} from '../../endpoints';
 import { useContext, useState } from "react";
 import DisplayErrors from '../utils/DisplayErrors'
 import AuthForm from "./AuthForm";

@@ -1,5 +1,5 @@
-import { urlGenres } from "../endpoints";
-import EditEntity from '../utils/EditEntity';
+import { urlGenres } from "../../endpoints";
+import EditEntity from '../../components/utils/EditEntity';
 import GenreForm from './GenreForm';
 import { genreCreationDTO, genreDTO } from "./genres.model";
 

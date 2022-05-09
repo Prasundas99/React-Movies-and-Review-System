@@ -1,5 +1,5 @@
-import { urlGenres } from '../endpoints';
-import IndexEntity from '../utils/IndexEntity';
+import { urlGenres } from '../../endpoints';
+import IndexEntity from '../../components/utils/IndexEntity';
 import { genreDTO } from "./genres.model";
 
 export default function IndexGenres() {

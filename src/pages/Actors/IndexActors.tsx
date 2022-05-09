@@ -1,5 +1,5 @@
-import { urlActors } from "../endpoints";
-import IndexEntity from "../utils/IndexEntity";
+import { urlActors } from "../../endpoints";
+import IndexEntity from "../../components/utils/IndexEntity";
 import { actorDTO } from './actors.model';
 
 export default function IndexActors() {

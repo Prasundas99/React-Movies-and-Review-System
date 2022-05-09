@@ -1,10 +1,10 @@
 import axios, { AxiosResponse } from 'axios';
 import { useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
-import { urlMovies } from '../endpoints';
-import DisplayErrors from '../utils/DisplayErrors';
-import { convertMovieToFormData } from '../utils/formDataUtils';
-import Loading from '../utils/Loading';
+import { urlMovies } from '../../endpoints';
+import DisplayErrors from '../../components/utils/DisplayErrors';
+import { convertMovieToFormData } from '../../components/utils/formDataUtils';
+import Loading from '../../components/utils/Loading';
 import MovieForm from './MovieForm';
 import { movieCreationDTO, moviePutGetDTO } from './movies.model';
 

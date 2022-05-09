@@ -1,26 +1,26 @@
-import IndexGenres from "./genres/IndexGenres";
-import CreateGenre from "./genres/CreateGenre";
-import EditGenre from "./genres/EditGenre";
+import IndexGenres from "./pages/genres/IndexGenres";
+import CreateGenre from "./pages/genres/CreateGenre";
+import EditGenre from "./pages/genres/EditGenre";
 
-import IndexActors from "./actors/IndexActors";
-import CreateActor from "./actors/CreateActor";
-import EditActor from "./actors/EditActor";
+import IndexActors from "./pages/actors/IndexActors";
+import CreateActor from "./pages/actors/CreateActor";
+import EditActor from "./pages/actors/EditActor";
 
-import IndexMovieTheaters from "./movietheaters/IndexMovieTheaters";
-import CreateMovieTheater from "./movietheaters/CreateMovieTheater";
-import EditMovieTheater from "./movietheaters/EditMovieTheater";
+import IndexMovieTheaters from "./pages/movietheaters/IndexMovieTheaters";
+import CreateMovieTheater from "./pages/movietheaters/CreateMovieTheater";
+import EditMovieTheater from "./pages/movietheaters/EditMovieTheater";
 
-import CreateMovie from "./movies/CreateMovie";
-import EditMovie from "./movies/EditMovie";
-import FilterMovies from "./movies/FilterMovies";
-import MovieDetails from './movies/MovieDetails';
+import CreateMovie from "./pages/movies/CreateMovie";
+import EditMovie from "./pages/movies/EditMovie";
+import FilterMovies from "./pages/movies/FilterMovies";
+import MovieDetails from './pages/movies/MovieDetails';
 
-import LandingPage from "./movies/LandingPage";
-import RedirectToLandingPage from './utils/RedirectToLandingPage';
+import LandingPage from "./pages/movies/LandingPage";
+import RedirectToLandingPage from './components/utils/RedirectToLandingPage';
 
-import Register from './auth/Register';
-import Login from './auth/Login';
-import IndexUsers from './auth/IndexUsers';
+import Register from './components/auth/Register';
+import Login from './components/auth/Login';
+import IndexUsers from './components/auth/IndexUsers';
 
 const routes = [
     {path: '/genres', component: IndexGenres, exact: true, isAdmin: true},

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { authenticationResponse, userCredentials } from './auth.models';
 import AuthForm from './AuthForm';
-import {urlAccounts} from '../endpoints';
+import {urlAccounts} from '../../endpoints';
 import { useContext, useState } from 'react';
 import DisplayErrors from '../utils/DisplayErrors';
 import { getClaims, saveToken } from './handleJWT';

@@ -1,5 +1,5 @@
-import { urlMovieTheaters } from "../endpoints";
-import IndexEntity from "../utils/IndexEntity";
+import { urlMovieTheaters } from "../../endpoints";
+import IndexEntity from "../../components/utils/IndexEntity";
 import { movieTheaterDTO } from "./movieTheater.model";
 
 export default function IndexMovieTheaters(){

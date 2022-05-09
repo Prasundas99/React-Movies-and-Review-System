@@ -2,10 +2,10 @@ import axios, { AxiosResponse } from "axios";
 import { Field, Form, Formik } from "formik"
 import { useEffect, useState } from "react";
 import { useHistory, useLocation } from "react-router-dom";
-import { urlGenres, urlMovies } from "../endpoints";
+import { urlGenres, urlMovies } from "../../endpoints";
 import { genreDTO } from "../genres/genres.model"
-import Button from "../utils/Button";
-import Pagination from "../utils/Pagination";
+import Button from "../../components/utils/Button";
+import Pagination from "../../components/utils/Pagination";
 import { movieDTO } from "./movies.model";
 import MoviesList from "./MoviesList";
 
